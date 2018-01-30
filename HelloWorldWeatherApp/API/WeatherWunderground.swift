@@ -22,7 +22,8 @@ struct ForecastWunder: Codable {
 
 
 struct ForecastWunderDay: Codable {
-    let icon_url: String
+    let icon_url: URL
     let title: String
     let fcttext_metric: String
 }
+

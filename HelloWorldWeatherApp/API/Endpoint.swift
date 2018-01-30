@@ -46,3 +46,4 @@ enum WeatherEndpoint: Endpoint {
         return []
     }
 }
+

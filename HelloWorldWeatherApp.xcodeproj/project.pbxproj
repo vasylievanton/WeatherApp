@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302CADE77EFCDFA58520D129 /* Pods_HelloWorldWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBC4268C928500BB9DDC1D5 /* Pods_HelloWorldWeatherApp.framework */; };
 		8409CF03201EFB2B00D4C721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409CF02201EFB2B00D4C721 /* AppDelegate.swift */; };
 		8409CF08201EFB2B00D4C721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409CF06201EFB2B00D4C721 /* Main.storyboard */; };
 		8409CF0A201EFB2B00D4C721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8409CF09201EFB2B00D4C721 /* Assets.xcassets */; };
@@ -16,9 +17,11 @@
 		8409CF20201F87A300D4C721 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409CF1F201F87A300D4C721 /* Endpoint.swift */; };
 		8409CF22201F8D9B00D4C721 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409CF21201F8D9B00D4C721 /* WeatherAPIClient.swift */; };
 		8409CF2420205CBB00D4C721 /* WeatherWunderground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8409CF2320205CBA00D4C721 /* WeatherWunderground.swift */; };
+		8460E8952020BA49006D4190 /* WeatherCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460E8942020BA49006D4190 /* WeatherCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CBC4268C928500BB9DDC1D5 /* Pods_HelloWorldWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409CEFF201EFB2B00D4C721 /* HelloWorldWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409CF02201EFB2B00D4C721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8409CF07201EFB2B00D4C721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		8409CF1F201F87A300D4C721 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		8409CF21201F8D9B00D4C721 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 		8409CF2320205CBA00D4C721 /* WeatherWunderground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWunderground.swift; sourceTree = "<group>"; };
+		8460E8942020BA49006D4190 /* WeatherCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCellViewModel.swift; sourceTree = "<group>"; };
+		84657FC8A41880C86D14001E /* Pods-HelloWorldWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldWeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldWeatherApp/Pods-HelloWorldWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		9F05AEEE6E76DA86985E614B /* Pods-HelloWorldWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldWeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldWeatherApp/Pods-HelloWorldWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302CADE77EFCDFA58520D129 /* Pods_HelloWorldWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787988639BE41D5AE01A18AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F05AEEE6E76DA86985E614B /* Pods-HelloWorldWeatherApp.debug.xcconfig */,
+				84657FC8A41880C86D14001E /* Pods-HelloWorldWeatherApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8409CEF6201EFB2A00D4C721 = {
 			isa = PBXGroup;
 			children = (
 				8409CF01201EFB2B00D4C721 /* HelloWorldWeatherApp */,
 				8409CF00201EFB2B00D4C721 /* Products */,
+				787988639BE41D5AE01A18AE /* Pods */,
+				F116AAC1557A0A34E97757D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +80,7 @@
 		8409CF01201EFB2B00D4C721 /* HelloWorldWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				8460E8932020BA02006D4190 /* Model */,
 				8409CF19201F290800D4C721 /* API */,
 				8409CF16201F008000D4C721 /* VC */,
 				8409CF02201EFB2B00D4C721 /* AppDelegate.swift */,
@@ -92,6 +111,23 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		8460E8932020BA02006D4190 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8460E8942020BA49006D4190 /* WeatherCellViewModel.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F116AAC1557A0A34E97757D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBC4268C928500BB9DDC1D5 /* Pods_HelloWorldWeatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8409CF11201EFB2B00D4C721 /* Build configuration list for PBXNativeTarget "HelloWorldWeatherApp" */;
 			buildPhases = (
+				70FBC76DAB878B8DD2816C39 /* [CP] Check Pods Manifest.lock */,
 				8409CEFB201EFB2B00D4C721 /* Sources */,
 				8409CEFC201EFB2B00D4C721 /* Frameworks */,
 				8409CEFD201EFB2B00D4C721 /* Resources */,
+				545A84CBC1FFDF1BFF1690E4 /* [CP] Embed Pods Frameworks */,
+				698A5980AE05940CD33F9828 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +198,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		545A84CBC1FFDF1BFF1690E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldWeatherApp/Pods-HelloWorldWeatherApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldWeatherApp/Pods-HelloWorldWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		698A5980AE05940CD33F9828 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldWeatherApp/Pods-HelloWorldWeatherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FBC76DAB878B8DD2816C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorldWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8409CEFB201EFB2B00D4C721 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -168,6 +263,7 @@
 				8409CF18201F00F100D4C721 /* WeatherTableViewController.swift in Sources */,
 				8409CF03201EFB2B00D4C721 /* AppDelegate.swift in Sources */,
 				8409CF2420205CBB00D4C721 /* WeatherWunderground.swift in Sources */,
+				8460E8952020BA49006D4190 /* WeatherCellViewModel.swift in Sources */,
 				8409CF1E201F508600D4C721 /* APIClient.swift in Sources */,
 				8409CF20201F87A300D4C721 /* Endpoint.swift in Sources */,
 			);
@@ -304,6 +400,7 @@
 		};
 		8409CF12201EFB2B00D4C721 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F05AEEE6E76DA86985E614B /* Pods-HelloWorldWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +415,7 @@
 		};
 		8409CF13201EFB2B00D4C721 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84657FC8A41880C86D14001E /* Pods-HelloWorldWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

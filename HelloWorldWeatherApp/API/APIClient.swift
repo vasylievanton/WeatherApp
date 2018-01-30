@@ -43,8 +43,10 @@ extension APIClient {
                 return
             }
             completion(.value(value))
+            
         }
         task.resume()
     }
-
+    
 }
+
